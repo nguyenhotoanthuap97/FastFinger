@@ -9,6 +9,7 @@
 //Goto x y
 void gotoXY(int x, int y)
 {
+	cout(x, " ", y);
 	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD position = { x, y };
 	SetConsoleCursorPosition(hStdout, position);
